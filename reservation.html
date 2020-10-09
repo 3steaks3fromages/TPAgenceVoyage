@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>À propos & Contact</title>
+    </head>
+    <body>
+        <h1>Menu</h1>
+            <nav>
+            <a href="MonCompte.html">Mon compte</a>
+            <a href="Panier.html">Panier</a>
+            <a href="APropos.html">A propos</a>
+            </nav>
+        <h1>NomAgence</h1>
+            <a href="PagePrincipale.html"><img src="ImageBandeau.jpg" alt="Bienvenue sur "></a>
+        <h1>Reservation</h1>
+            <form action="recapitulatif.html" method="get">
+            Destination: <br>
+            <input type="text" name="remarque" size="30" disabled="disabled" value="destination"><br>
+            <br>
+            Nom : <br>
+            <input type="text" name="nom"><br>
+            Prénom : <br>
+            <input type="text" name="prenom"><br>
+            Adresse mail : <br>
+            <input type="text" name="mail"><br>
+            Numéro de téléphone :<br>
+            <input type="text" name=“telephone" pattern="[0-9]{10}"><br>
+            Date de départ : <input type="date"><br>
+            Date de retour: &nbsp&nbsp<input type="date"><br>
+            Nombre d'adultes :<br>
+            <input type="range" min="1" max="8" value="1" class="slider" id="nbadultes"><br>
+            Nombre d'enfants (-12 ans) :<br>
+            <input type="range" min="0" max="8" value="0" class="slider" id="nbenfants"><br>
+            Petit déjeuner : <input type="checkbox" id="petitdej"><br>
+            <br>
+            Quelque chose à ajouter?<br>
+            <input type="text" name="remarque" size="30"><br>
+            <br>
+            Total: <br>
+            <br>
+            <input type="submit"> &nbsp <input type=reset>
+            </form>
+            <footer>
+                <br>
+                <a href="#">Aller en haut de page</a>
+                <p>© </p>
+            </footer>
+    </body>
+</html>

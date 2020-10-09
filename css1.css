@@ -1,0 +1,11 @@
+a.menu {
+    display:block;
+    
+}
+
+a.banniere {
+    position: sticky;
+    top: 0;
+    display:block;
+   
+}
