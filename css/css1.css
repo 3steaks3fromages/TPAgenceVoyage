@@ -20,7 +20,9 @@ a.banniere2{
 
 div.menu{
     display: block;
-    grid-area: menu;  
+    grid-area: menu;
+    background-image: linear-gradient(to bottom,white,rgba(9, 125, 179, 0.938));
+  
     height:100%
 }
 
@@ -77,4 +79,9 @@ body{
         "menu footer filtres";
     grid-gap: 2px;
     padding-top: 60px;
+}
+
+img {
+	width: 150px;
+	height:auto;
 }
