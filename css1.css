@@ -21,7 +21,7 @@ a.banniere2{
 div.menu{
     display: block;
     grid-area: menu;
-    background-color:darkblue;
+    background-image: linear-gradient(to bottom,white,rgba(9, 125, 179, 0.938));
   
     height:100%
 }
@@ -61,7 +61,7 @@ body{
     min-height: 200vh;
     margin-left:0;
     display:grid;
-    grid-template-columns: 25% auto 20%;
+    grid-template-columns: 20% auto 20%;
     grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
@@ -69,4 +69,9 @@ body{
         "menu footer filtres";
     grid-gap: 2px;
     padding-top: 60px;
+}
+
+img {
+	width: 150px;
+	height:auto;
 }
