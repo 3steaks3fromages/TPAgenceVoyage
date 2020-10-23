@@ -3,8 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <title>À propos & Contact</title>
+        <script src="../js/reservation.js"></script>
     </head>
-    <body>
+    <body onLoad="infourl()">
         <h1>Menu</h1>
             <nav>
             <a href="MonCompte.html">Mon compte</a>
@@ -16,7 +17,7 @@
         <h1>Reservation</h1>
             <form action="recapitulatif.html" method="get">
             Destination: <br>
-            <input type="text" name="remarque" size="30" disabled="disabled" value="destination"><br>
+            <input type="text" id="dest" name="dest" size="30"><br>
             <br>
             Nom : <br>
             <input type="text" name="nom"><br>
@@ -26,13 +27,13 @@
             <input type="text" name="mail"><br>
             Numéro de téléphone :<br>
             <input type="text" name="telephone" pattern="[0-9]{10}"><br>
-            Date de départ : <input type="date"><br>
-            Date de retour: &nbsp&nbsp<input type="date"><br>
+            Date de départ : <input type="date" id="al" name="depart"><br>
+            Date de retour: &nbsp&nbsp<input type="date" id="re" name="retour"><br>
             Nombre d'adultes :<br>
-            <input type="range" min="1" max="8" value="1" class="slider" id="nbadultes"><br>
+            <input type="range" min="1" max="8" value="1" class="slider" id="nbadultes" name="nba"><br>
             Nombre d'enfants (-12 ans) :<br>
-            <input type="range" min="0" max="8" value="0" class="slider" id="nbenfants"><br>
-            Petit déjeuner : <input type="checkbox" id="petitdej"><br>
+            <input type="range" min="0" max="8" value="0" class="slider" id="nbenfants" name="nbe"><br>
+            Petit déjeuner : <input type="checkbox" id="petitdej" name="dej"><br>
             <br>
             Quelque chose à ajouter?<br>
             <input type="text" name="remarque" size="30"><br>
@@ -41,10 +42,10 @@
             <br>
             <input type="submit"> &nbsp <input type=reset>
             </form>
-            <footer>
+        <footer>
                 <br>
                 <a href="#">Aller en haut de page</a>
                 <p>© </p>
-            </footer>
+        </footer>
     </body>
 </html>

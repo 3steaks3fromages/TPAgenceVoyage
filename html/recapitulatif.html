@@ -3,9 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>NomAgence</title>
+        <script src="../js/recap.js"></script>
     </head>
 
-    <body>
+    <body onload="infourl()">
         <h1>Menu</h1>
         <nav>
             <a href="MonCompte.html">Mon compte</a>
@@ -15,18 +16,22 @@
         <h1>NomAgence</h1>
             <a href="index.html"><img src="ImageBandeau.jpg" alt="Bienvenue sur "></a>
         <h1>Récapitulatif</h1>
-        Destination:<br>
-        <br>
-        Nom :<br>
-        Prénom :<br>
-        Adresse mail :<br>
-        Numéro de téléphone :<br>
-        Date de départ: <br>
-        Date de retour:<br>
-        Nombre d'adultes:<br>
-        Nombre d'enfants:<br>
-        Petit déjeuner:<br>
-        Remarque supplémentaire:<br>
+        <template id="listeRecap">
+            <span>
+                Destination : {{dest}}<br>
+                Nom : {{nom}}<br>
+                Prénom : {{prenom}}<br>
+                Adresse mail : {{mail}}<br>
+                Numéro de téléphone : {{telephone}}<br>
+                Date de départ: {{depart}}<br>
+                Date de retour: {{retour}}<br>
+                Nombre d'adultes: {{nba}}<br>
+                Nombre d'enfants: {{nbe}}<br>
+                Petit déjeuner: {{dej}}<br>
+                Remarque supplémentaire: {{remarque}}<br>
+            </span>
+        </template>
+
         <br>
         Total:
         <footer>
@@ -35,4 +40,5 @@
             <p>© </p>
         </footer>
     </body>
+    </script>
 </html>
