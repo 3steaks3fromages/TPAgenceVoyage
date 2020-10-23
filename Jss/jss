@@ -1,0 +1,5 @@
+fonction afficher temperature(){
+    let city = "Londres";
+    let appid ="22a7422a02905ebdb6a91c38f34a6256"
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=London)
+}
