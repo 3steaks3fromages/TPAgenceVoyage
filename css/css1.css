@@ -90,14 +90,14 @@ img {
 .Londres{
     z-index: 1;
 }
-  .text {
+.text {
     background: rgba(0, 0, 0, 0.4);
     z-index: 10;
     position: absolute;
     text-align: center;
     font-family: Georgia;
     margin: 0 auto;
-    width:100%:
+    width:100%;
     
     top: 30%;
     color: white;
