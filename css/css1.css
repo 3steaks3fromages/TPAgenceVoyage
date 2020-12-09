@@ -103,3 +103,22 @@ img {
     
 }
 */
+
+#scrollbtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    z-index: 10; 
+    border: none; 
+    outline: none; 
+    background-color: cyan; 
+    color: white; 
+    cursor: pointer; 
+    padding: 20px; 
+    font-size: 25px; 
+  }
+  
+  #scrollbtn:hover {
+    background-color: darkcyan; 
+  }
