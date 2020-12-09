@@ -87,10 +87,8 @@ img {
 	height:auto;
 }
 
-.Londres{
-    z-index: 1;
-}
-.text {
+/*
+.text_temp {
     background: rgba(0, 0, 0, 0.4);
     z-index: 10;
     position: absolute;
@@ -104,3 +102,4 @@ img {
     
     
 }
+*/

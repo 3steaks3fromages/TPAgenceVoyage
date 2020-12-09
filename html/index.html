@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="../css/css1.css">
         <meta charset="UTF-8">
         <title>index</title>
-        <script src="../Jss/temp.js"></script>
+        <script src="../js/meteo.js"></script>
     </head>
 
     <body onload="affichertemperature()">
@@ -13,8 +13,7 @@
         <div class="menu">
             <nav>
                 <ul id="listemenu">
-                    <li class="ElemMenu" id="Account"><a  href="MonCompte.html">Mon compte</a></li>
-                    <li class="ElemMenu" id="Basket"><a  href="Panier.html">Panier</a></li>
+                    <li class="ElemMenu" id="Account_or_login"><a  href="moncompte.html">Mon compte</a></li>
                     <li class="ElemMenu" id="AP"><a  href="APropos.html">A propos</a></li>
                 </ul>
                 
@@ -23,32 +22,38 @@
             </nav>
         </div>
     <div class="destinations">
-        <div data-city="London">
-            <a  href="reservation.html?destination=londres" ><img src="../image/londres.jpg" alt="Londres" id="i1"></a>
-            <h1 class="text" id="templondres">           </h1>
+        <div>
+            <a  href="reservation.html?destination=londres" ><img src="../image/londres.jpg" alt="Londres" id="i1" class="dest"></a>
+            <p class="text_temp" id="temp_Londres"></p>
         </div>
 
         <div>
-            <a href="reservation.html?destination=kualalumpur"><img src="../image/kualalumpur.jpg" alt="Kuala Lumpur" id="i2"></a>
-        
+            <a href="reservation.html?destination=kualalumpur"><img src="../image/kualalumpur.jpg" alt="Kuala Lumpur" id="i2" class="dest"></a>
+            <p class="text_temp" id="temp_KualaLumpur"></p>
         </div>
         <div>
-            <a href="reservation.html?destination=rome"><img src="../image/Rome.jpg" alt="Rome" id="i3"></a>
+            <a href="reservation.html?destination=rome"><img src="../image/Rome.jpg" alt="Rome" id="i3" class="dest"></a>
+            <p class="text_temp" id="temp_Rome"></p>
         </div>
         <div>   
-            <a href="reservation.html?destination=la"><img src="../image/LA.jpg" alt="Los Angeles" id="i4"></a>
+            <a href="reservation.html?destination=la"><img src="../image/LA.jpg" alt="Los Angeles" id="i4" class="dest"></a>
+            <p class="text_temp" id="temp_LosAngeles"></p>
         </div>
         <div> 
-            <a href="reservation.html?destination=hawaii"><img src="../image/hawaii.jpg" alt="Hawaii" id="i5"></a>
+            <a href="reservation.html?destination=hawaii"><img src="../image/hawaii.jpg" alt="Honolulu" id="i5" class="dest"></a>
+            <p class="text_temp" id="temp_Honolulu"></p>
         </div>
         <div>    
-            <a href="reservation.html?destination=sidney"><img src="../image/sidney.jpg" alt="Sidney" id="i6"></a>
+            <a href="reservation.html?destination=sidney"><img src="../image/sidney.jpg" alt="Sidney" id="i6" class="dest"></a>
+            <p class="text_temp" id="temp_Sidney"></p>
         </div>
         <div>    
-            <a href="reservation.html?destination=venise"><img src="../image/Venise.jpg" alt="Venise" id="i7"></a>
+            <a href="reservation.html?destination=venise"><img src="../image/Venise.jpg" alt="Venise" id="i7" class="dest"></a>
+            <p class="text_temp" id="temp_Venise"></p>
         </div>
         <div>    
-            <a href="reservation.html?destination=paris"><img src="../image/Paris.jpg" alt="Paris" id="i8"></a>
+            <a href="reservation.html?destination=paris"><img src="../image/Paris.jpg" alt="Paris" id="i8" class="dest"></a>
+            <p class="text_temp" id="temp_Paris"></p>
         </div> 
         
     </div>
@@ -61,7 +66,7 @@
     <footer>
         <br>
         <a href="#">Aller en haut de page</a>
-        <p>© </p>
+        <p>Jordan Brassac - Timothée Levilly</p>
     </footer>
     </body>
 </html>

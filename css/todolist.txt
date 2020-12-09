@@ -1,0 +1,8 @@
+Comptes et connexion
+    Cookies
+    BDD sans sql (json)
+CSS sur toutes les pages
+Météo sur toutes les destinations
+Calcul prix
+Filtres
+    Donner à chaque id de destination des propriétés 
