@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <script src="../js/connexion.js"></script>
+    <script src="../js/verifConnexion.js"></script>
+    <script src="../json/user_data.json"></script>
+
+</head>
+<body onload=initialisation()>
+    <h1>Menu</h1>
+    <nav>
+        <a href="MonCompte.html">Mon compte</a>
+        <a href="Panier.html">Panier</a>
+        <a href="APropos.html">A propos</a>
+    </nav>
+    <h1>NomAgence</h1>
+        <a href="index.html"><img src="ImageBandeau.jpg" alt="Bienvenue sur "></a>
+    <h1>Contenu</h1>
+    <form action="index.html" onsubmit="return isValidForm()" method="get" id="form">
+        <p>Veuillez renseigner vos informations:</p><br>
+        Adresse e-mail : <br>
+        <input type="text" name="email" id="idEmail" required><br>
+        Mot de passe : <br>
+        <input type="text" name="password" id="idPassword" required><br>
+        <input type="submit">
+        </form>
+        <footer>
+            <br>
+            <a href="#">Aller en haut de page</a>
+            <p>Jordan Brassac - Timothée Levilly</p>
+        </footer>
+</body>
+</html>

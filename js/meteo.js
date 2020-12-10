@@ -12,14 +12,18 @@ function affichertemperature(){
             return response.json();
         })
         .then(function(json){
-            console.log(json["name"]+" - "+ parseInt(json["main"]["temp"])+"°C");
             tableau[i] = parseInt(json["main"]["temp"]);
-            if (tableau.length ==nb_dest){
+            if (tableau.length==nb_dest){
                 for (let j=0;j<nb_dest;j++){
                     let destination=liste_destinations.item(j).getAttribute("alt");
-                    document.getElementById("temp_"+destination.replace(/ /g,'')).innerHTML=(destination+" - "+ parseInt(tableau[j])+"°C");
+                    document.getElementById("temp_"+destination.replace(/ /g,'')).innerHTML=(destination+" : "+ parseInt(tableau[j])+"°C");
                 }
             }
         });
     }
+}
+
+function initialisation(){
+    affichertemperature();
+    verifConnexion();
 }

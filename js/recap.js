@@ -1,6 +1,6 @@
 function infourl(){
     let template = document.querySelector("#listeRecap");
-    let variables=[findGetParameter('destination_hidden'),findGetParameter('nom'),findGetParameter('prenom'),findGetParameter('telephone'),findGetParameter('mail'),findGetParameter('depart'),findGetParameter('retour+required'),findGetParameter('nbe'),findGetParameter('nba'),findGetParameter('dej'),findGetParameter('remarque')]
+    let variables=[findGetParameter('destination_hidden'),findGetParameter('nom'),findGetParameter('prenom'),findGetParameter('telephone'),findGetParameter('mail'),findGetParameter('depart'),findGetParameter('retour'),findGetParameter('nbe'),findGetParameter('nba'),findGetParameter('dej'),findGetParameter('remarque')]
     let clone = document.importNode(template.content, true);      // clone le template
     
     const destinations_data = require('../config.json');
