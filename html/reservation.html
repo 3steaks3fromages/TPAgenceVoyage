@@ -13,34 +13,40 @@
             <a href="APropos.html">A propos</a>
             </nav>
         <h1>NomAgence</h1>
-            <a href="index.html"><img src="ImageBandeau.jpg" alt="Bienvenue sur "></a>
+            <a href="index.html"><img src="../image/banniere.jpg" alt="Bienvenue sur "></a>
         <h1>Reservation</h1>
-            <form action="recapitulatif.html" method="get">
+            <form action="recapitulatif.html" onsubmit="return isValidForm()" method="get" id="form">
             Destination: <br>
-            <p id="destination_choisie_id"></p>{{destination_choisie}}<br>
+            <template id="template_dest">
+                <span>
+                    <p id="destination_choisie_id"></p>
+                    {{destination_choisie}}
+                </span>
+            </template><br>
             <br>
+            <input id="destination_hidden" name="destination_hidden" type="hidden"/>
             Nom : <br>
-            <input type="text" name="nom"><br>
+            <input type="text" name="nom" required><br>
             Prénom : <br>
-            <input type="text" name="prenom"><br>
+            <input type="text" name="prenom" required><br>
             Adresse mail : <br>
-            <input type="text" name="mail"><br>
+            <input type="text" name="mail" required><br>
             Numéro de téléphone :<br>
-            <input type="text" name="telephone" pattern="[0-9]{10}"><br>
-            Date de départ : <input type="date" id="al" name="depart"><br>
-            Date de retour: &nbsp&nbsp<input type="date" id="re" name="retour"><br>
+            <input type="text" name="telephone" pattern="[0-9]{10}" required><br>
+            Date de départ : <input type="date" id="al" name="depart" required><br>
+            Date de retour : <input type="date" id="re" name="retour required"><br>
             Nombre d'adultes :<br>
             <input type="range" min="1" max="8" value="1" class="slider" id="nbadultes" name="nba"><br>
             Nombre d'enfants (-12 ans) :<br>
             <input type="range" min="0" max="8" value="0" class="slider" id="nbenfants" name="nbe"><br>
-            Petit déjeuner : <input type="checkbox" id="petitdej" name="dej"><br>
+            Petit déjeuner (5€) : <input type="checkbox" id="petitdej" name="dej" ><br>
             <br>
             Quelque chose à ajouter?<br>
             <input type="text" name="remarque" size="30"><br>
             <br>
             Total: <br>
             <br>
-            <input type="submit"> &nbsp <input type=reset>
+            <input type="submit"><input type=reset>
             </form>
         <footer>
                 <br>

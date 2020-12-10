@@ -1,0 +1,26 @@
+{
+    "user1":{
+        "email":"timothee.levilly@cpe.fr",
+        "password":"abc123",
+        "prenom":"Timothée",
+        "nom":"Levilly"
+    },
+    "user2":{
+        "email":"jordan.brassac@cpe.fr",
+        "password":"123456",
+        "prenom":"Jordan",
+        "nom":"Brassac"
+    },
+    "user3":{
+        "email":"lucien.bramare@gmail.com",
+        "password":"oss117",
+        "prenom":"Lucien",
+        "nom":"Bramare"
+    },
+    "user4":{
+        "email":"noel.flantier@gmail.com",
+        "password":"oss117",
+        "prenom":"Noël",
+        "nom":"Flantier"
+    }
+}

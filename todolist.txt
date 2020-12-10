@@ -1,0 +1,15 @@
+Comptes et connexion
+    Cookies
+    BDD sans sql (json)
+CSS sur toutes les pages
+X Météo sur toutes les destinations
+CSS Meteo
+Calcul prix
+Filtres
+    Donner à chaque id de destination des propriétés 
+X Impossible de mettre la date de départ après celle de retour
+
+
+Problème:
+dates getElementById()
+texte affiché par js en bas de page
