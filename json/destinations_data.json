@@ -1,61 +1,58 @@
 {
-    "destinations":
+    "Paris":
     {
-        "paris":
-        {
-            "name": "Paris",
-            "prix_adulte":"80",
-            "banner":"../image/Paris.jpg",
-            "continent":"Europe"
-        },
-        "rome":
-        {
-            "name": "Rome",
-            "prix_adulte":"90",
-            "banner":"../image/Rome.jpg",
-            "continent":"Europe"
-        },
-        "kuala_lumpur":
-        {
-            "name": "Kuala Lumpur",
-            "prix_adulte":"120",
-            "banner":"../image/kualalumpur.jpg",
-            "continent":"Asie"
-        },
-        "los_angeles":
-        {
-            "name": "Los Angeles",
-            "prix_adulte":"150",
-            "banner":"../image/LA.jpg",
-            "continent":"Amérique"
-        },
-        "honolulu":
-        {
-            "name": "Honolulu",
-            "prix_adulte":"180",
-            "banner":"../image/hawaii.jpg",
-            "continent":"Amérique"
-        },
-        "syndey":
-        {
-            "name": "Sydney",
-            "prix_adulte":"200",
-            "banner":"../image/sidney.jpg",
-            "continent":"Oceanie"
-        },
-        "london":
-        {
-            "name": "Londres",
-            "prix_adulte":"90",
-            "banner":"../image/Paris.jpg",
-            "continent":"Europe"
-        },
-        "venice":
-        {
-            "name": "Venise",
-            "prix_adulte":"100",
-            "banner":"../image/Paris.jpg",
-            "continent":"Europe"
-        }
+        "name": "Paris",
+        "prixAdulte":"80",
+        "banner":"../image/Paris.jpg",
+        "continent":"Europe"
+    },
+    "Rome":
+    {
+        "name": "Rome",
+        "prixAdulte":"90",
+        "banner":"../image/Rome.jpg",
+        "continent":"Europe"
+    },
+    "kualaLumpur":
+    {
+        "name": "Kuala Lumpur",
+        "prixAdulte":"120",
+        "banner":"../image/kualalumpur.jpg",
+        "continent":"Asie"
+    },
+    "losAngeles":
+    {
+        "name": "Los Angeles",
+        "prixAdulte":"150",
+        "banner":"../image/LA.jpg",
+        "continent":"Amérique"
+    },
+    "Honolulu":
+    {
+        "name": "Honolulu",
+        "prixAdulte":"180",
+        "banner":"../image/hawaii.jpg",
+        "continent":"Amérique"
+    },
+    "Syndey":
+    {
+        "name": "Sydney",
+        "prixAdulte":"200",
+        "banner":"../image/sidney.jpg",
+        "continent":"Oceanie"
+    },
+    "Londres":
+    {
+        "name": "Londres",
+        "prixAdulte":"90",
+        "banner":"../image/Paris.jpg",
+        "continent":"Europe"
+    },
+    "Venise":
+    {
+        "name": "Venise",
+        "prixAdulte":"100",
+        "banner":"../image/Paris.jpg",
+        "continent":"Europe"
     }
 }

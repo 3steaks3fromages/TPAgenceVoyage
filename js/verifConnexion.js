@@ -5,6 +5,7 @@ function verifConnexion(){
         document.getElementById("Account_or_login").innerHTML="Connexion";
         document.getElementById("Account_or_login").href="connexion.html";
         document.getElementById("Deconnexion").setAttribute("hidden", true);
+        return false;
     }
     else{
         // Afficher nom & prénom
@@ -12,6 +13,7 @@ function verifConnexion(){
         nom=getCookie("nom");
         document.getElementById("Account_or_login").innerHTML=nom+" "+prenom;
         document.getElementById("Account_or_login").href="moncompte.html";
-        
+        return true;
     }
+
 }

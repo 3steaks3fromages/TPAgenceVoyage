@@ -1,18 +1,19 @@
-Comptes et connexion
+X Comptes et connexion
     Cookies
     BDD sans sql (json)
-CSS sur toutes les pages
+X CSS sur toutes les pages
 X Météo sur toutes les destinations
-CSS Meteo
-Calcul prix
-Filtres
-    Donner à chaque id de destination des propriétés 
+X CSS Meteo
+X Calcul prix
+
 X Impossible de mettre la date de départ après celle de retour
 
+Filtres
+    Donner à chaque id de destination des propriétés 
+Bouton haut de page
 
 Problème:
-dates getElementById()
-texte affiché par js en bas de page
-
+dates bug if
+pk jordan peut pas se connecter
 
 
