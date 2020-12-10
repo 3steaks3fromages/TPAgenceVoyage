@@ -86,9 +86,8 @@ a{
         "menu footer filtres";
     padding-top: 70px;
     
-  
-   
 }
+
 div.reservation{
     display: block;
     background-color: rgba(234, 250, 248, 0.973);
@@ -129,9 +128,9 @@ div.reservation{
         "menu footer footer";
 
     padding-top: 70px;
-
-    
 }
+
+
 
 div.propos{
     display: block;
@@ -166,6 +165,7 @@ div.connexion{
     grid-area:connexion;
 }
 
+
 #body_recapulatif{
     min-height: 100vh;
     margin-left:0;
@@ -190,6 +190,30 @@ div.recapitulatif{
 
 }
 
+#body_mc{
+    min-height: 100vh;
+    
+    margin-left:0;
+    display:grid;
+    grid-template-columns: 20% 80% 0%;
+    grid-template-rows: 3px auto 0px;
+    grid-template-areas:
+        "banniere banniere banniere"
+        "menu mc mc"
+        "menu footer footer";
+
+    padding-top: 70px;
+}
+
+div.mc{
+    display: block;
+    background-color: rgba(234, 250, 248, 0.973);
+    text-align: center;
+    font-family: Georgia;   
+    grid-area: mc;
+    padding-top: 60px;
+    
+}
 
 img {
 	width: 150px;
