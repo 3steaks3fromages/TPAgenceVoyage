@@ -18,15 +18,14 @@ a.banniere2{
     padding: 10px;
     font-family: Georgia;
     font-size: 40px;
-    background-image:linear-gradient(to right,white,rgb(179, 236, 243));
+    background-color:rgba(147,221,240,1);
 }
 
 div.menu{
     display: block;
     grid-area: menu;
     margin-top: 65 px;
-    background-image: linear-gradient(to bottom,white,rgba(9, 125, 179, 0.938));
-  
+    background-color: rgba(147,221,240,1);
     height:100%
 }
 
@@ -36,12 +35,12 @@ div.menu{
 
 
 li.ElemMenu{
-    background-image: linear-gradient(to right,white,rgba(9, 125, 179, 0.938));
+    background-color:rgba(147,221,240,1);
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left:0px;
     border:1px solid;
-    border-color: white;
+    border-color: rgb(8, 0, 0);
     list-style-type: none;
 }
 
@@ -52,6 +51,7 @@ footer{
 }
 
 div.filtres{
+    background-color:rgba(147,221,240,1);
     grid-area: filtres;
     max-width: auto;
     height:100%
@@ -76,15 +76,16 @@ a{
 #body_index{
     min-height: 200vh;
     margin-left:0;
-  
+    
     display:grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 0px auto 0px;
+    grid-template-rows: 3px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu destinations filtres"
         "menu footer filtres";
     padding-top: 70px;
+    
   
    
 }
@@ -103,7 +104,7 @@ div.reservation{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 0px auto 0px;
+    grid-template-rows: 3px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu reservation reservation"
@@ -121,7 +122,7 @@ div.reservation{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 0px auto 0px;
+    grid-template-rows: 3px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu propos propos"
