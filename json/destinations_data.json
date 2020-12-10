@@ -5,7 +5,6 @@
         {
             "name": "Paris",
             "prix_adulte":"80",
-            "prix_enfant":"60",
             "banner":"../image/Paris.jpg",
             "continent":"Europe"
         },
@@ -13,7 +12,6 @@
         {
             "name": "Rome",
             "prix_adulte":"90",
-            "prix_enfant":"70",
             "banner":"../image/Rome.jpg",
             "continent":"Europe"
         },
@@ -21,7 +19,6 @@
         {
             "name": "Kuala Lumpur",
             "prix_adulte":"120",
-            "prix_enfant":"100",
             "banner":"../image/kualalumpur.jpg",
             "continent":"Asie"
         },
@@ -29,7 +26,6 @@
         {
             "name": "Los Angeles",
             "prix_adulte":"150",
-            "prix_enfant":"130",
             "banner":"../image/LA.jpg",
             "continent":"Amérique"
         },
@@ -37,7 +33,6 @@
         {
             "name": "Honolulu",
             "prix_adulte":"180",
-            "prix_enfant":"160",
             "banner":"../image/hawaii.jpg",
             "continent":"Amérique"
         },
@@ -45,23 +40,20 @@
         {
             "name": "Sydney",
             "prix_adulte":"200",
-            "prix_enfant":"180",
             "banner":"../image/sidney.jpg",
             "continent":"Oceanie"
         },
         "london":
         {
-            "name": "Paris",
-            "prix_adulte":"",
-            "prix_enfant":"",
+            "name": "Londres",
+            "prix_adulte":"90",
             "banner":"../image/Paris.jpg",
             "continent":"Europe"
         },
         "venice":
         {
             "name": "Venise",
-            "prix_adulte":"",
-            "prix_enfant":"",
+            "prix_adulte":"100",
             "banner":"../image/Paris.jpg",
             "continent":"Europe"
         }
