@@ -21,16 +21,16 @@
             <br>
             <h1>Reservation</h1>
                 <form action="recapitulatif.html" onsubmit="return isValidForm()" method="get" id="form">
-                Destination: <br>
                 <template id="template_dest" >
                     <span>
-                        <p id="destination_choisie_id"></p>
+                        <p id="destination_choisie_id">
                         Destination: <br>
                         {{destination_choisie}}
+                        </p>
                     </span>
                 </template>
                 <br>
-                <input id="destination_hidden" name="destination_hidden" type="hidden"/>
+                <input id="destination_hidden" name="destination_hidden" hidden/>
                 Nom : <br>
                 <input type="text" name="nom" required><br><br>
                 Prénom : <br>
