@@ -1,15 +1,10 @@
 function verifConnexion(){
-    /* Structure cookies:
-    0: email
-    1: mdp
-    2: nom
-    3: prenom
-    */
-    var cookies = document.cookie;
+
     if (getCookie("email")==null){
-        // Afficher connexion
+        // Afficher connexion et cacher déconnexion
         document.getElementById("Account_or_login").innerHTML="Connexion";
         document.getElementById("Account_or_login").href="connexion.html";
+        document.getElementById("Deconnexion").setAttribute("hidden", true);
     }
     else{
         // Afficher nom & prénom
@@ -17,5 +12,6 @@ function verifConnexion(){
         nom=getCookie("nom");
         document.getElementById("Account_or_login").innerHTML=nom+" "+prenom;
         document.getElementById("Account_or_login").href="moncompte.html";
+        
     }
 }
