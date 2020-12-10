@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/css1.css">
     <title>Document</title>
     <script src="../js/moncompte.js"></script>
     <script src="../js/verifConnexion.js"></script>
     <script src="../js/cookies.js"></script>
 </head>
-<body onload="initialisation()">
-    <p>Prénom:</p>
-    <p id="prenom"></p>
-    <p>Nom:</p>
-    <p id="nom"></p>
-    <p>Adresse e-mail:</p>
-    <p id="email"></p>
+
+<body id="body_mc" onload="initialisation()">
+    <a  href="index.html" class="banniere2"><img class="banniere" src="../image/logo.jpg" alt="Bienvenue sur ">Be to trip </a>
+    <div class="menu">
+        <nav>
+            <ul id="listemenu">
+                <li class="ElemMenu" ><a id="Account_or_login" href="moncompte.html">Placeholder Nom+Prenom / Connexion</a></li>
+                <li class="ElemMenu" ><a id="Deconnexion" href="deconnexion.html">Deconnexion</a></li>
+                <li class="ElemMenu" id="AP"><a  href="APropos.html">A propos</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="mc">
+        <p>Prénom:</p>
+        <p id="prenom"></p>
+        <p>Nom:</p>
+        <p id="nom"></p>
+        <p>Adresse email:</p>
+        <p id="email"></p>
+    </div>
 </body>
 </html>
