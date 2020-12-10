@@ -3,40 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <title>NomAgence</title>
+        <link rel="stylesheet" href="../css/css1.css">
         <script src="../js/recap.js"></script>
     </head>
 
-    <body onload="infourl()">
-        <h1>Menu</h1>
-        <nav>
-            <a href="MonCompte.html">Mon compte</a>
-            <a href="Panier.html">Panier</a>
-            <a href="APropos.html">A propos</a>
-        </nav>
-        <h1>NomAgence</h1>
-            <a href="index.html"><img src="ImageBandeau.jpg" alt="Bienvenue sur "></a>
-        <h1>Récapitulatif</h1>
-        <template id="listeRecap">
-            <span>
-                Prix: {{prix}}€<br>
-                <br>
-                Destination : {{destinationChoisie}}<br>
-                Nom : {{nom}}<br>
-                Prénom : {{prenom}}<br>
-                Adresse mail : {{mail}}<br>
-                Numéro de téléphone : {{telephone}}<br>
-                Date de départ: {{depart}}<br>
-                Date de retour: {{retour}}<br>
-                Durée du séjour: {{dureeSejour}} jours<br>
-                Nombre d'adultes: {{nba}}<br>
-                Nombre d'enfants: {{nbe}}<br>
-                Petit déjeuner: {{dej}}<br>
-                Remarque supplémentaire: {{remarque}}<br>
-            </span>
-        </template>
+    <body onload="infourl()" id="body_recapitulatif">
+        <a  href="index.html" class="banniere2"><img class="banniere" src="../image/logo.jpg" alt="Bienvenue sur " ">Be to trip </a>
+        <div class="menu">
+            <nav>
+                <ul id="listemenu">
+                    <li class="ElemMenu" ><a id="Account_or_login" href="moncompte.html">Placeholder Nom+Prenom / Connexion</a></li>
+                    <li class="ElemMenu" ><a id="Deconnexion" href="deconnexion.html">Deconnexion</a></li>
+                    <li class="ElemMenu" id="AP"><a  href="APropos.html">A propos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="recapitulatif">
+            <h1>Récapitulatif</h1>
+            <template id="listeRecap">
+                <span>
+                    Prix: {{prix}}€<br>
+                    <br>
+                    Destination : {{destinationChoisie}}<br>
+                    Nom : {{nom}}<br>
+                    Prénom : {{prenom}}<br>
+                    Adresse mail : {{mail}}<br>
+                    Numéro de téléphone : {{telephone}}<br>
+                    Date de départ: {{depart}}<br>
+                    Date de retour: {{retour}}<br>
+                    Durée du séjour: {{dureeSejour}} jours<br>
+                    Nombre d'adultes: {{nba}}<br>
+                    Nombre d'enfants: {{nbe}}<br>
+                    Petit déjeuner: {{dej}}<br>
+                    Remarque supplémentaire: {{remarque}}<br>
+                </span>
+            </template>
 
-        <br>
-        Total:
+            <br>
+            Total:
+        </div>
         <footer>
             <br>
             <a href="#">Aller en haut de page</a>

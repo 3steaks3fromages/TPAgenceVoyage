@@ -31,8 +31,8 @@ function infourl(){
     var dateDepart = new Date(arrayDepart[0],arrayDepart[1],arrayDepart[2]);
     var dateRetour = new Date(arrayRetour[0],arrayRetour[1],arrayRetour[2]);
     var dureeSejour = Math.round((dateRetour.getTime()-dateDepart.getTime())/86400000);
-
-
+    
+ 
     var prix =0 ;
     newContent= clone.firstElementChild.innerHTML
     .replace(/{{destinationChoisie}}/g, destination)
@@ -64,4 +64,5 @@ function findGetParameter(parameterName) {
         });
     return result;
     //fonction récupérée sur internet
+    
 }

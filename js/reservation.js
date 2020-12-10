@@ -41,6 +41,8 @@ window.onload = function() {
     }
 }
 
+
+
 function isValidForm(){
 
     var strDepart = document.getElementById("al").value;

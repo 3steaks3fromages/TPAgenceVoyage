@@ -143,6 +143,54 @@ div.propos{
     font-size: 25px; 
     grid-area:propos;
 }
+#body_connexion{
+    min-height: 100vh;
+    margin-left:0;
+    display:grid;
+    grid-template-columns: 20% 80% 0%;
+    grid-template-rows: 3px auto 0px;
+    grid-template-areas:
+        "banniere banniere banniere"
+        "menu connexion connexion"
+        "menu footer footer";
+    padding-top: 70px;
+}
+
+div.connexion{
+    display: block;
+    padding-top: 45px;
+    background-color: rgba(234, 250, 248, 0.973);
+    text-align: center;
+    font-family: Georgia;  
+    font-size: 25px; 
+    grid-area:connexion;
+}
+
+#body_recapulatif{
+    min-height: 100vh;
+    margin-left:0;
+    display:grid;
+    grid-template-columns: 20% 80% 0%;
+    grid-template-rows: 3px auto 0px;
+    grid-template-areas:
+        "banniere banniere banniere"
+        "menu recapitulatif recapitulatif"
+        "menu footer footer";
+    padding-top: 70px;
+}
+
+div.recapitulatif{
+    display: block;
+    padding-top: 45px;
+    background-color: rgba(234, 250, 248, 0.973);
+    text-align: center;
+    font-family: Georgia;  
+    font-size: 25px; 
+    grid-area: recapitulatif ;
+
+}
+
+
 img {
 	width: 150px;
 	height:auto;
