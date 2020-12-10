@@ -2,24 +2,6 @@ function initialisation(){
     //verifConnexion();
 }
 
-function isValidForm(){
-    /*
-    1- Recuperer le json
-    2- Lire le json
-    3- Ajouter le cookie
-    */
-   var email=document.getElementById("idEmail");
-   var password= document.getElementById("idPassword");
-
-   fetch('../json/destinations_data.json')
-  .then(response => response.text())
-  .then(data => {
-    window.alert(data);
-    console.log(data);
-    return false;
-  });
-}
-
 window.onload = function() {
     var form = document.getElementById('form');
     form.onsubmit = function() {
@@ -27,3 +9,27 @@ window.onload = function() {
     }
 }
 
+function isValidForm(){
+    var email=document.getElementById("idEmail").value;
+    var password= document.getElementById("idPassword").value;
+
+    fetch('../json/user_data.json')
+    .then(response => response.json())
+    .then(data => {
+        var connexion_failed=true;
+        for(user in data){
+          if (data[user]["email"]==email && data[user]["password"] == password){
+              connexion_failed=false;
+              setCookie("email",email,1000);
+              setCookie("password",password,1000);
+              setCookie("nom",data[user]["nom"],1000);
+              setCookie("prenom",data[user]["prenom"],1000);
+              window.alert("Connexion effectuée avec succès!");
+              window.location.replace("index.html");
+          }
+        }
+        if(connexion_failed == true){
+            window.alert("Email et/ou mot de passe incorrect");
+        }
+    });
+}

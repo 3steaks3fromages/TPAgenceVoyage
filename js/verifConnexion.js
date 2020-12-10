@@ -6,14 +6,15 @@ function verifConnexion(){
     3: prenom
     */
     var cookies = document.cookie;
-    if (cookies == ""){
+    if (getCookie("email")==null){
         // Afficher connexion
         document.getElementById("Account_or_login").innerHTML="Connexion";
         document.getElementById("Account_or_login").href="connexion.html";
     }
     else{
-        prenom=cookies[3];
-        nom=cookies[2];
+        // Afficher nom & prénom
+        prenom=getCookie("prenom");
+        nom=getCookie("nom");
         document.getElementById("Account_or_login").innerHTML=nom+" "+prenom;
         document.getElementById("Account_or_login").href="moncompte.html";
     }

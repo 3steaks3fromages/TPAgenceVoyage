@@ -13,3 +13,6 @@ X Impossible de mettre la date de départ après celle de retour
 Problème:
 dates getElementById()
 texte affiché par js en bas de page
+
+
+

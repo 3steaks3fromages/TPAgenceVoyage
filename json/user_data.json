@@ -22,5 +22,11 @@
         "password":"oss117",
         "prenom":"Noël",
         "nom":"Flantier"
+    },
+    "user5":{
+        "email":"a",
+        "password":"b",
+        "prenom":"c",
+        "nom":"d"
     }
 }
