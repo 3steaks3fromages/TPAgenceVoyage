@@ -1,13 +1,12 @@
 img.banniere {
     top: 0;
     display:inline-block;
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     vertical-align: middle;
-    margin-right: 1em;
+    margin-right: 2em;
     
 }
-
 
 a.banniere2{
     grid-area: banniere;
@@ -16,16 +15,14 @@ a.banniere2{
     display:block;
     width: 100%;
     padding: 10px;
-    font-family: Georgia;
-    font-size: 40px;
-    background-color:rgba(147,221,240,1);
+    background-image:linear-gradient(to right,white,rgb(72, 234, 255));
 }
 
 div.menu{
     display: block;
     grid-area: menu;
-    margin-top: 65 px;
-    background-color: rgba(147,221,240,1);
+    background-image: linear-gradient(to bottom,white,rgba(9, 125, 179, 0.938));
+  
     height:100%
 }
 
@@ -35,23 +32,21 @@ div.menu{
 
 
 li.ElemMenu{
-    background-color:rgba(147,221,240,1);
+    background-image: linear-gradient(to right,white,rgba(9, 125, 179, 0.938));
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left:0px;
     border:1px solid;
-    border-color: rgb(8, 0, 0);
+    border-color: white;
     list-style-type: none;
 }
 
 footer{
     grid-area: footer;
-
     display:block;
 }
 
 div.filtres{
-    background-color:rgba(147,221,240,1);
     grid-area: filtres;
     max-width: auto;
     height:100%
@@ -59,7 +54,7 @@ div.filtres{
 
 div.destinations{
     display: grid;
-
+    grid-gap: 60px;
     grid-template-columns: auto;
     grid-area: destinations;
 }
@@ -73,98 +68,41 @@ a{
     text-decoration: none;
 }
 
-#body_index{
+body{
     min-height: 200vh;
     margin-left:0;
-    
     display:grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu destinations filtres"
         "menu footer filtres";
-    padding-top: 70px;
-    
-  
-   
-}
-div.reservation{
-    display: block;
-    background-color: rgba(234, 250, 248, 0.973);
-    text-align: center;
-    font-family: Georgia;   
-    grid-area: reservation;
+    grid-gap: 2px;
     padding-top: 60px;
-    
 }
 
-#body_res{
-    min-height: 200vh;
-    margin-left:0;
-    display:grid;
-    grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
-    grid-template-areas:
-        "banniere banniere banniere"
-        "menu reservation reservation"
-        "menu footer footer";
-    
-    padding-top: 70px;
-
-
-   
-}
-
-#body_propos{
-    min-height: 100vh;
-    
-    margin-left:0;
-    display:grid;
-    grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
-    grid-template-areas:
-        "banniere banniere banniere"
-        "menu propos propos"
-        "menu footer footer";
-
-    padding-top: 70px;
-
-    
-}
-
-div.propos{
-    display: block;
-    padding-top: 45px;
-
-    background-color: rgba(234, 250, 248, 0.973);
-    text-align: center;
-    font-family: Georgia;  
-    font-size: 25px; 
-    grid-area:propos;
-}
 img {
 	width: 150px;
 	height:auto;
 }
 
-
+/*
 .text_temp {
     background: rgba(0, 0, 0, 0.4);
     z-index: 10;
-    position: relative;
+    position: absolute;
     text-align: center;
     font-family: Georgia;
-    font-size: 30px;
     margin: 0 auto;
     width:100%;
     
-    top: -35px;
+    top: 30%;
     color: white;
     
     
 }
-
+*/
 
 #scrollbtn {
     display: none;
