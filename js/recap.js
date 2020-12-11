@@ -51,6 +51,8 @@ function infourl(){
             prix=prix+((nbaInt+nbeInt)*dureeSejour*12);
         }
         
+
+        numeroCommande
         //ajout cookie derniere reservation et suppression des anciens (on suppose que chaque PC est utilisé par un seul utilisateur)
 
         eraseCookie("reservationDest")

@@ -13,6 +13,21 @@
         "banner":"../image/Rome.jpg",
         "continent":"Europe"
     },
+    "Londres":
+    {
+        "name": "Londres",
+        "prixAdulte":"90",
+        "banner":"../image/londres.jpg",
+        "continent":"Europe"
+    },
+    
+    "Venise":
+    {
+        "name": "Venise",
+        "prixAdulte":"100",
+        "banner":"../image/Venise.jpg",
+        "continent":"Europe"
+    },
     "kualaLumpur":
     {
         "name": "Kuala Lumpur",
@@ -40,19 +55,5 @@
         "prixAdulte":"200",
         "banner":"../image/sidney.jpg",
         "continent":"Oceanie"
-    },
-    "Londres":
-    {
-        "name": "Londres",
-        "prixAdulte":"90",
-        "banner":"../image/Paris.jpg",
-        "continent":"Europe"
-    },
-    "Venise":
-    {
-        "name": "Venise",
-        "prixAdulte":"100",
-        "banner":"../image/Paris.jpg",
-        "continent":"Europe"
     }
 }

@@ -11,6 +11,7 @@ X Impossible de mettre la date de départ après celle de retour
 Filtres
     Donner à chaque id de destination des propriétés 
 Bouton haut de page
+Prix à côté de la Météo
 
 Problème:
 dates bug if

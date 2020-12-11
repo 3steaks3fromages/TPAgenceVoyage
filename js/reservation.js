@@ -52,17 +52,17 @@ function isValidForm(){
     var strRetour = document.getElementById("re").value;
     var arrayDepart = strDepart.split("-");
     var arrayRetour = strRetour.split("-");
-    var dateDepart = new Date(arrayDepart[0],arrayDepart[1],arrayDepart[2]);
-    var dateRetour = new Date(arrayRetour[0],arrayRetour[1],arrayRetour[2]);
+    var dateDepart = new Date(arrayDepart[0],arrayDepart[1]-1,arrayDepart[2]);
+    var dateRetour = new Date(arrayRetour[0],arrayRetour[1]-1,arrayRetour[2]);
     
     if (dateDepart.getTime() >= dateRetour.getTime()){
         window.alert("Erreur votre date de départ se situe après votre date de retour")
         return false;
     }
-    else if (dateDepart.getTime() < Date.now().getTime()){
+    else if (dateDepart.getTime() < Date.now()){
         window.alert("Erreur votre date de départ ne peut pas être passé")
         return false;
     }
-    return false;
+    return true;
 
 }
