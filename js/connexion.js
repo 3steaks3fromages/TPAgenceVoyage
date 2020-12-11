@@ -1,5 +1,5 @@
 function initialisation(){
-    //verifConnexion();
+    verifConnexion();
 }
 
 window.onload = function() {
