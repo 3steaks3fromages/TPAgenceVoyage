@@ -1,4 +1,40 @@
-function ajoutDestinations(prixMin,prixMax){
+const inputPrixMax = document.getElementById("prixMaxInput");
+const inputPrixMin = document.getElementById("prixMinInput");
+
+inputPrixMin.addEventListener('input', updateValue);
+inputPrixMax.addEventListener('input', updateValue);
+
+
+function updateValue(e) {
+    var prixMin=inputPrixMin.value;
+    var prixMax=inputPrixMax.value;
+
+    if (prixMin==null){
+        prixMin=0;
+        console.log("prix min null");
+    }
+    if (prixMax==null){
+        prixMax=1000;
+        console.log("prix max null");
+
+    }
+    
+    if(isNaN(parseInt(prixMin))){
+        inputPrixMin.value="";
+        console.log("min pas un nombre");
+    }
+    if(isNaN(parseInt(prixMax))){
+        inputPrixMax.value="";
+        console.log("max pas un nombre");
+    }
+    if(!isNaN(parseInt(prixMax)) && !isNaN(parseInt(prixMin))){
+        console.log("maj des dests");
+        ajoutDestinations(prixMin,prixMax);
+    }
+}
+
+
+function ajoutDestinations(){
     var prixMaxInt=1000;
     var prixMinInt=0;
 
@@ -28,10 +64,10 @@ function ajoutDestinations(prixMin,prixMax){
                 <div>    
                     <a href=\"reservation.html?destination=`+destination_data+`\"><img src=\"`+imgPath+`\" alt=\"`+name+`\" id=\"i`+i+`\" class=\"dest\"></a>
                     <p class=\"text_temp\" id=\"temp_`+destination_data+`\"></p>
-                </div>`;
+                </div>
+                `;
             }
         }
-        console.log(destinationTemp);
         affichertemperature(tableauPrix,destinationTemp);
     });
 }

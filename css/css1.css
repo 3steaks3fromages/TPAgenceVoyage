@@ -5,7 +5,8 @@ img.banniere {
     height: 75px;
     vertical-align: middle;
     margin-right: 1em;
-    
+    position: relative;
+    z-index: 11;
 }
 
 
@@ -13,6 +14,7 @@ a.banniere2{
     grid-area: banniere;
     top: 0px;
     position: fixed;
+    z-index: 12;
     display:block;
     width: 100%;
     padding: 10px;
@@ -221,7 +223,7 @@ img {
 }
 
 
-.text_temp {
+.text_temp{
     background: rgba(0, 0, 0, 0.4);
     z-index: 10;
     position: relative;
@@ -230,11 +232,8 @@ img {
     font-size: 30px;
     margin: 0 auto;
     width:100%;
-    
     top: -38px;
     color: white;
-    
-    
 }
 
 
