@@ -8,13 +8,10 @@ X Calcul prix
 
 X Impossible de mettre la date de départ après celle de retour
 
-Filtres
+X Filtres
     Donner à chaque id de destination des propriétés 
 Bouton haut de page
-Prix à côté de la Météo
+X Prix à côté de la Météo
 
-Problème:
-dates bug if
-pk jordan peut pas se connecter
 
 

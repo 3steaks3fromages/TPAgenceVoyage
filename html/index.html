@@ -24,16 +24,15 @@
     <div class="destinations" id="bloc-destination">
     
     </div>
-    
     <div class="filtres">
         <p>Filtres</p>
         <br>
         <form action="javascript:void(0);" method="get" id="form">
             Prix minimum (par jour et pour 1 adulte): <br>
-            <input type="text" id="prixMinInput" required><br>
+            <input type="text" id="prixMinInput" value="0" required><br>
             <br>
             Prix maximum (par jour et pour 1 adulte): <br>
-            <input type="text" id="prixMaxInput" required><br>
+            <input type="text" id="prixMaxInput" value="200" required><br>
         </form>
     </div>
 
@@ -42,7 +41,9 @@
         <a href="#">Aller en haut de page</a>
         <p>Jordan Brassac - Timothée Levilly</p>
     </footer>
-    <button onclick="hdp()" id="scrollbtn" title="Retour en haut de page"></button>
+    <button onclick="hdp()" id="scrollbtn" title="Retour en haut de page">^</button>
+    <script src="../js/scrollbtn.js"></script>
+
     <script src="../js/filtres.js"></script>
     </body>
 </html>

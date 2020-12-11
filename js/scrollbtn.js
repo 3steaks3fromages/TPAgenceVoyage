@@ -1,12 +1,14 @@
-bouton = document.getElementById("scrollbtn");
+const bouton = document.getElementById("scrollbtn");
 
-window.onscroll = function() {scrolldet()};
+document.addEventListener('scroll', scrolldet);
+
 
 function scrolldet() {
+  console.log("scroll");
   if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    mybutton.style.display = "block";
+    bouton.style.display = "block";
   } else {
-    mybutton.style.display = "none";
+    bouton.style.display = "none";
   }
 }
 

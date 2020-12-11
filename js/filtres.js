@@ -34,15 +34,18 @@ function updateValue(e) {
 }
 
 
-function ajoutDestinations(){
+function ajoutDestinations(prixMin, prixMax){
     var prixMaxInt=1000;
     var prixMinInt=0;
 
-    if(typeof(prixMin) != "undefined"){
+    if(prixMin !== undefined){
         prixMinInt=parseInt(prixMin);
+        console.log("yes min");
     }
-    if(typeof(prixMax) != "undefined"){
+    if(prixMax !== undefined){
         prixMaxInt=parseInt(prixMax);
+        console.log("yes max");
+
     }
     document.getElementById("bloc-destination").innerHTML="";
     fetch('../json/destinations_data.json')

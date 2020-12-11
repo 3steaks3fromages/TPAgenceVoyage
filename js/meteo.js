@@ -12,7 +12,6 @@ function affichertemperature(tableauPrix, destinationTemp){
             return response.json();
         })
         .then(function(json){
-            console.log(json);
             tableau[i] = parseInt(json["main"]["temp"]);
             if (tableau.length==nb_dest){
                 for (let j=0;j<nb_dest;j++){
@@ -27,6 +26,4 @@ function affichertemperature(tableauPrix, destinationTemp){
 function initialisation(){
     verifConnexion();
     ajoutDestinations();
-    
-
 }

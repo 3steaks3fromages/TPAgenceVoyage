@@ -61,7 +61,6 @@ div.filtres{
 
 div.destinations{
     display: grid;
-
     grid-template-columns: auto;
     grid-area: destinations;
 }
@@ -76,7 +75,6 @@ a{
 }
 
 #body_index{
-    min-height: 200vh;
     margin-left:0;
     
     display:grid;
@@ -87,7 +85,7 @@ a{
         "menu destinations filtres"
         "menu footer filtres";
     padding-top: 70px;
-    
+    scroll-behavior: smooth;
 }
 
 div.reservation{
@@ -100,8 +98,27 @@ div.reservation{
     
 }
 
+#scrollbtn {
+    display: none;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+    z-index: 10; 
+    border: none; 
+    outline: none; 
+    background-color: gray; 
+    color: white; 
+    cursor: pointer; 
+    padding: 20px; 
+    font-size: 25px; 
+}
+  
+#scrollbtn:hover {
+    background-color: darkcyan; 
+}
+
 #body_res{
-    min-height: 200vh;
+    /*min-height: 200vh;*/
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
@@ -110,11 +127,7 @@ div.reservation{
         "banniere banniere banniere"
         "menu reservation reservation"
         "menu footer footer";
-    
     padding-top: 70px;
-
-
-   
 }
 
 #body_propos{
