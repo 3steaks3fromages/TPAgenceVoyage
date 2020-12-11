@@ -84,7 +84,7 @@ a{
     
     display:grid;
     grid-template-columns: 20% auto 20%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu destinations filtres"
@@ -108,7 +108,7 @@ div.reservation{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu reservation reservation"
@@ -126,7 +126,7 @@ div.reservation{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu propos propos"
@@ -152,7 +152,7 @@ div.propos{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu connexion connexion"
@@ -176,7 +176,7 @@ div.connexion{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu recapitulatif recapitulatif"
@@ -201,7 +201,7 @@ div.recapitulatif{
     margin-left:0;
     display:grid;
     grid-template-columns: 20% 80% 0%;
-    grid-template-rows: 3px auto 0px;
+    grid-template-rows: 0px auto 0px;
     grid-template-areas:
         "banniere banniere banniere"
         "menu mc mc"
