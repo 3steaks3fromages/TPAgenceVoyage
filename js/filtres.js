@@ -11,21 +11,17 @@ function updateValue(e) {
 
     if (prixMin==null){
         prixMin=0;
-        console.log("prix min null");
     }
     if (prixMax==null){
         prixMax=1000;
-        console.log("prix max null");
 
     }
     
     if(isNaN(parseInt(prixMin))){
         inputPrixMin.value="";
-        console.log("min pas un nombre");
     }
     if(isNaN(parseInt(prixMax))){
         inputPrixMax.value="";
-        console.log("max pas un nombre");
     }
     if(!isNaN(parseInt(prixMax)) && !isNaN(parseInt(prixMin))){
         console.log("maj des dests");
@@ -40,11 +36,9 @@ function ajoutDestinations(prixMin, prixMax){
 
     if(prixMin !== undefined){
         prixMinInt=parseInt(prixMin);
-        console.log("yes min");
     }
     if(prixMax !== undefined){
         prixMaxInt=parseInt(prixMax);
-        console.log("yes max");
 
     }
     document.getElementById("bloc-destination").innerHTML="";
@@ -71,6 +65,8 @@ function ajoutDestinations(prixMin, prixMax){
                 `;
             }
         }
+        console.log(tableauPrix);
+        console.log(destinationTemp);
         affichertemperature(tableauPrix,destinationTemp);
     });
 }
