@@ -91,7 +91,8 @@ function infourl(){
         .replace(/{{remarque}}/g, variables[10])
         .replace(/{{prix}}/g,prix);
         clone.firstElementChild.innerHTML= newContent;
-        document.body.appendChild(clone);
+        document.getElementById("le_recapitulatif").appendChild(clone);
+
     });
 }
 

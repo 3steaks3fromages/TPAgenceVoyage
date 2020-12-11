@@ -166,7 +166,7 @@ div.connexion{
 }
 
 
-#body_recapulatif{
+#body_recapitulatif{
     min-height: 100vh;
     margin-left:0;
     display:grid;
@@ -231,7 +231,7 @@ img {
     margin: 0 auto;
     width:100%;
     
-    top: -35px;
+    top: -38px;
     color: white;
     
     
